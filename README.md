@@ -1,16 +1,33 @@
-# dialog_manager
+<!-- header section -->
+<p align="center">
+  <span><b>Flutter -  Architect Dialogs 📺</b></span><br/>
+</p>
+<!-- header section END -->
 
-A new Flutter project.
+<br/>
 
-## Getting Started
+<!-- show case/gif section -->
 
-This project is a starting point for a Flutter application.
+<!-- show case/gif section END -->
 
-A few resources to get you started if this is your first Flutter project:
+<br/>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<!-- about app and course section -->
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## About this app 🗣
+
+This app was developed from the tutorial [Architect Your Dialogs in Flutter | Flutter Dialogs Tutorial | Build a Dialog Manager in Flutter](https://www.youtube.com/watch?v=IrFU_BrCWnE&list=PLdTodMosi-BwEwlzjN6EyS1vwGXFo-UlK&index=10) by [Dane Mackier (Filledstacks)](https://www.filledstacks.com/).<br/><br/>
+This app show how you can architect Your Dialogs in Flutter.
+
+## Tech Stack 👩🏾‍💻
+
+- [Dart](https://dart.dev/)
+- [Flutter](https://flutter.dev/)
+
+## Plugins 📟
+
+- [provider](https://pub.dev/packages/provider)
+- [get_it](https://pub.dev/packages/get_it)
+- [rflutter_alert](https://pub.dev/packages/rflutter_alert)
+
+<!-- about app and course section END -->
