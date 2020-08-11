@@ -7,7 +7,14 @@ class HomeViewModel extends ChangeNotifier {
 
   Future doThings() async {
     print('dialog called');
-    var dialogResult = await _dialogService.showDialog();
-    print('dialog closed');
+    var dialogResult = await _dialogService.showDialog(
+      title: 'Custom Title',
+      description: 'FilledStacks architecture rocks',
+    );
+    if (dialogResult.confirmed) {
+      print('User has confirmed');
+    } else {
+      print('User cancelled the dialog');
+    }
   }
 }
