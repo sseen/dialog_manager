@@ -17,7 +17,7 @@
 ## About this app 🗣
 
 This app was developed from the tutorial [Architect Your Dialogs in Flutter | Flutter Dialogs Tutorial | Build a Dialog Manager in Flutter](https://www.youtube.com/watch?v=IrFU_BrCWnE&list=PLdTodMosi-BwEwlzjN6EyS1vwGXFo-UlK&index=10) by [Dane Mackier (Filledstacks)](https://www.filledstacks.com/).<br/><br/>
-This app show how you can architect Your Dialogs in Flutter.
+This app show how you can architect your global dialogs in Flutter.
 
 ## Tech Stack 👩🏾‍💻
 
