@@ -10,10 +10,11 @@ class HomeView extends StatelessWidget {
       child: Consumer<HomeViewModel>(
         builder: (context, model, child) => Scaffold(
           body: Center(
-            child: FlatButton(
+            child: ElevatedButton(
               child: Text('Show Dialog'),
               onPressed: () {
                 model.doThings();
+                Future.delayed(const Duration(seconds: 1), () => model.doThings2());
               },
             ),
           ),

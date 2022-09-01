@@ -2,8 +2,16 @@ import 'dart:async';
 
 import 'package:dialog_manager/datamodels/alert_request.dart';
 import 'package:dialog_manager/datamodels/alert_response.dart';
+import 'package:flutter/material.dart';
 
 class DialogService {
+  Key diaKey;
+  AlertRequest currentReq;
+
+  DialogService(Key key) {
+    diaKey = key;
+  }
+
   Function(AlertRequest) _showDialogListener;
   Completer<AlertResponse> _dialogCompleter;
 
@@ -13,17 +21,10 @@ class DialogService {
   }
 
   /// Calls the dialog listener and returns a Future that will wait for dialogComplete.
-  Future<AlertResponse> showDialog({
-    String title,
-    String description,
-    String buttonTitle = 'Ok',
-  }) {
+  Future<AlertResponse> showDialog(AlertRequest req) {
+    currentReq = req;
     _dialogCompleter = Completer<AlertResponse>();
-    _showDialogListener(AlertRequest(
-      title: title,
-      description: description,
-      buttonTitle: buttonTitle,
-    ));
+    _showDialogListener(req);
     return _dialogCompleter.future;
   }
 
